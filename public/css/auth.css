@@ -1,0 +1,126 @@
+body {
+    background-color: white;
+}
+body.light {
+    color: black;
+    background-color: white;
+  }
+  body.dark {
+    color: #eee;
+    background-color: #121212;
+    
+  }
+
+
+  body.dark a {
+    color: #809fff;
+}
+
+body.dark input[type="checkbox"] {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #B3B3B3 #dcddde #dcddde #B3B3B3;
+  content: "";
+  background-image: linear-gradient(135deg, #B1B6BE 0%, #FFF 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+
+
+  body.dark input {
+    color: white;
+    background-color: black;
+    
+  }
+
+  body.dark  input:focus + label {
+    color: #cfcfcf;  
+  } 
+
+
+  body.dark  input:placeholder {
+    color: red;  
+  } 
+
+
+  body.dark  input:focus {
+    background-color: #f7f7f7;
+  } 
+
+
+
+  
+.login a {
+    text-decoration: none;
+  }
+  .login {
+    min-height: 100vh;
+  }
+  
+  .bg-image {
+    background-image: url('https://images.pexels.com/photos/4176695/pexels-photo-4176695.jpeg?cs=srgb&dl=pexels-jennifer-enujiugha-4176695.jpg&fm=jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .login-heading {
+    font-weight: 300;
+  }
+  
+  .btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+  }
+
+    
+.signup a {
+  text-decoration: none;
+}
+  .signup {
+    min-height: 100vh;
+  }
+  
+  .bg-image2 {
+    background-image: url('https://images.pexels.com/photos/9002742/pexels-photo-9002742.jpeg?cs=srgb&dl=pexels-mo-9002742.jpg&fm=jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .signup-heading {
+    font-weight: 300;
+  }
+  
+  .btn-signup {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+  }
+
+
+
+  .qr {
+    border-width: 0;
+    border-style: none;
+    border-color: #0000ff;
+    border-collapse: collapse;
+  }
+  .qr td {
+    border-width: 0;
+    border-style: none;
+    border-color: #0000ff;
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
+    width: 10px;
+    height: 10px;
+  }
+  .qr td.black { background-color: #000; }
+  .qr td.white { background-color: #fff; }
+
+
+ 
+  
