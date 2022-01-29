@@ -27,6 +27,8 @@ Route::get('verify-payment/{reference}', [PaymentPage::class, 'verify']);
 Route::get('docs', [App\Http\Controllers\DocsController::class, 'index'])->name('docs');
 
 
+Route::get('success', [App\Http\Controllers\SuccessController::class, 'index'])->name('success');
+
 Auth::routes(['verify' => true]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

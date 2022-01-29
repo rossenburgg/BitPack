@@ -15,50 +15,37 @@
     <!-- Stylesheets -->
     <link href="{{ asset('css/pace.css') }}" rel="stylesheet">
 
+    @notifyCss
+
 </head>
 
 
 
 <body class="h-full">
+
+      
+        <x:notify-messages />
+        @notifyJs
     <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div class="max-w-md w-full space-y-8">
             <div>
                 <img class="mx-auto h-12 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                     alt="Workflow">
                 <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
-                    Forgot Your Password?
+                   Password Reset
                 </h2>
                 <p class="mt-2 text-center text-sm text-gray-600">
-                    No worries! We will send you a reset instructions.
+                    Your password has been successfully reset. Click below to login magically
 
                 </p>
             </div>
-            @if (session('status'))
-
-                <div class="alert alert-success" role="alert">
-                    {{ session('status') }}
-                </div>
-            @endif
-            <form class="mt-8 space-y-6" method="POST" action="{{ route('password.email') }}">
-                @csrf
-                <input type="hidden" name="remember" value="true">
-                <div class="rounded-md  -space-y-px">
+         
+            <div class="mt-8 space-y-6">
+               
+                <a href=" {{(route('home'))}}" class="no-underline">
                     <div>
-                        <label for="email"
-                            class=" block text-sm text-gray-800 dark:text-gray-200">{{ __('E-Mail Address') }}</label>
-                        <input id="email" name="email" type="email" autocomplete="email" value="{{ old('email') }}"
-                            required
-                            class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 @error('email') is-invalid @enderror"
-                            placeholder="Enter your email">
-                        @error('email')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
-                    </div>
-
-                    <div>
-                        <button type="submit"
+                        
+                        <button  
                             class="group relative mt-4 w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                             <span class="absolute left-0 inset-y-0 flex items-center pl-3">
                                 <!-- Heroicon name: solid/lock-closed -->
@@ -70,12 +57,14 @@
                                         clip-rule="evenodd" />
                                 </svg>
                             </span>
-                            {{ __('Reset Password') }}
+                           {{ __(' Continue') }}
                         </button>
+                    </div>
+                   
                     </div>
                     <div class="text-sm text-center mt-3">
                         
-                        <a href="{{route('login')}}" class="font-medium text-gray-600 hover:text-indigo-500 no-underline ">
+                        <a href="{{route('logout')}}" class="font-medium text-gray-600 hover:text-indigo-500 no-underline ">
                             <i class="fas fa-arrow-left"></i>
                             {{__('Back to Login')}}
                         </a>
@@ -83,7 +72,7 @@
                       </div>
 
                       
-            </form>
+            </div>
         </div>
     </div>
 

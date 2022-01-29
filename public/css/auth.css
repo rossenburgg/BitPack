@@ -61,7 +61,7 @@ body.dark input[type="checkbox"] {
   }
   
   .bg-image {
-    background-image: url('https://images.pexels.com/photos/4176695/pexels-photo-4176695.jpeg?cs=srgb&dl=pexels-jennifer-enujiugha-4176695.jpg&fm=jpg');
+    background-image: url('/imgs/jane.jpg');
     background-size: cover;
     background-position: center;
   }
@@ -85,7 +85,7 @@ body.dark input[type="checkbox"] {
   }
   
   .bg-image2 {
-    background-image: url('https://images.pexels.com/photos/9002742/pexels-photo-9002742.jpeg?cs=srgb&dl=pexels-mo-9002742.jpg&fm=jpg');
+    background-image: url('/imgs/signupill.jpg');
     background-size: cover;
     background-position: center;
   }

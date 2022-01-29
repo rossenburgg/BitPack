@@ -15,7 +15,7 @@
 
     <link href="{{ asset('css/pace.css') }}" rel="stylesheet">
 
-
+    @notifyCss
     <style>
         [x-cloak] {
             display: none !important;
@@ -23,7 +23,8 @@
 
     </style>
 </head>
-
+<x:notify-messages />
+@notifyJs
 <body class="relative antialiased bg-gray-100 m-5">
 
     <!-- Start Nav -->
