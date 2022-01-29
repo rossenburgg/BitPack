@@ -23,10 +23,11 @@
 
     </style>
 </head>
-<x:notify-messages />
-@notifyJs
-<body class="relative antialiased bg-gray-100 m-5">
 
+<body class="relative antialiased bg-gray-100 m-5">
+    <x:notify-messages />
+    @notifyJs
+    
     <!-- Start Nav -->
     <div class="fixed bottom-4 right-4 xl:right-20">
         <a href="https://www.buymeacoffee.com/ejulfaey" target="_blank"
