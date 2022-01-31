@@ -28,6 +28,10 @@ Route::get('docs', [App\Http\Controllers\DocsController::class, 'index'])->name(
 
 
 Route::get('success', [App\Http\Controllers\SuccessController::class, 'index'])->name('success');
+Route::any('phone', [App\Http\Controllers\VerifyPhone::class, 'index'])->name('phone');
+
+
+
 
 Auth::routes(['verify' => true]);
 
