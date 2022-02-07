@@ -56,6 +56,16 @@ class User extends Authenticatable implements MustVerifyEmail
     return $this->hasOne(LoginSecurity::class);
 }
 
+public function routeNotificationForHellioSMS()
+{
+    return $this->mobile_number;
+}
 
+
+public function otpCode()
+{
+    
+    return $this->belongsTo(UserOtp::class);
+}
 
 }

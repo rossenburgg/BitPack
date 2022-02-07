@@ -27,7 +27,7 @@
 <body class="relative antialiased bg-gray-100 m-5">
     <x:notify-messages />
     @notifyJs
-    
+
     <!-- Start Nav -->
     <div class="fixed bottom-4 right-4 xl:right-20">
         <a href="https://www.buymeacoffee.com/ejulfaey" target="_blank"
@@ -165,7 +165,7 @@
                     <form id="logout-form" action="{{ route('logout') }}" method="POST">
                         @csrf
                         <a href="{{ route('logout') }}"
-                            onclick="event.preventDefault(); 
+                            onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">
 
                             <div class="p-2 rounded hover:bg-gray-200">
@@ -248,7 +248,7 @@
                             Offers
                         </a>
                     </li>
-                    
+
                 </ul>
 
             </div>

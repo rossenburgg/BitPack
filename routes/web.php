@@ -28,7 +28,8 @@ Route::get('docs', [App\Http\Controllers\DocsController::class, 'index'])->name(
 
 
 Route::get('success', [App\Http\Controllers\SuccessController::class, 'index'])->name('success');
-Route::any('phone', [App\Http\Controllers\VerifyPhone::class, 'index'])->name('phone');
+Route::get('phone', [App\Http\Controllers\VerifyPhone::class, 'index'])->name('phone');
+Route::post('phone', [App\Http\Controllers\VerifyPhone::class, 'verify'])->name('phone.verify');
 
 
 

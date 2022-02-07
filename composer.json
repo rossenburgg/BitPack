@@ -7,7 +7,6 @@
     "require": {
         "php": "^7.3|^8.0",
         "bacon/bacon-qr-code": "^1.0",
-        "bavix/laravel-wallet": "^7.3",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "helliomessaging/helliomessaging-laravel-notification-channel": "^1.0",
@@ -15,9 +14,11 @@
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "mckenziearts/laravel-notify": "^2.2",
+        "octohk/laravel-segment": "^1.0@beta",
         "pragmarx/google2fa": "^8.0",
         "pragmarx/google2fa-laravel": "^2.0",
         "pragmarx/google2fa-qrcode": "^3.0",
+        "pusher/pusher-php-server": "^7.0",
         "realrashid/sweet-alert": "^4.1"
     },
     "require-dev": {

@@ -47,23 +47,7 @@
                                         <label for="floatingInput">{{ __('E-Mail') }}</label>
 
                                     </div>
-<style>
-    .intl-tel-input {
-        display: table-cell;
-      }
-      .intl-tel-input .selected-flag {
-        z-index: 4;
-      }
-      .intl-tel-input .country-list {
-        z-index: 5;
-      }
-      .input-group .intl-tel-input .form-control {
-        border-top-left-radius: 4px;
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 4px;
-        border-bottom-right-radius: 0;
-      }
-    </style>
+
                                     <div class="form-floating mb-3">
                                         <input id="floatingInput" type="tel" placeholder="+233****"
                                             class="form-control @error('phone') is-invalid @enderror" name="mobile_number"
