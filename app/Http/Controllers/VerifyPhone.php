@@ -41,7 +41,7 @@ class VerifyPhone extends Controller
 
         $otp->delete();
 
-        return redirect('home');
+        return redirect('psuccess');
 
     }
 
