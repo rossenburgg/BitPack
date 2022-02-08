@@ -46,7 +46,6 @@ Route::group(['prefix'=>'2fa'], function(){
     Route::post('/enable2fa','App\Http\Controllers\LoginSecurityController@enable2fa')->name('enable2fa');
     Route::post('/disable2fa','App\Http\Controllers\LoginSecurityController@disable2fa')->name('disable2fa');
 
-    Route::get('/page', 'App\Http\Controllers\PageController@index');
 
     // 2fa middleware
     Route::post('/2faVerify', function () {
