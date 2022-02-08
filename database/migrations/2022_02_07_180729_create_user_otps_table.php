@@ -14,6 +14,7 @@ class CreateUserOtpsTable extends Migration
     public function up()
     {
 
+
         Schema::create('user_otps', function (Blueprint $table) {
 
             $table->id();
@@ -24,7 +25,7 @@ class CreateUserOtpsTable extends Migration
 
         });
 
-        
+
     }
 
     /**

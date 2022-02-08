@@ -30,7 +30,9 @@ class VerifyPhone extends Controller
 
     public function verify(VerifyOTPRequest $request)
     {
-        
+
+
+
         $otp = UserOtp::where(['user_id'=> auth()->id(),'code' => $request->otpcode])->first();
         if($otp->hasExpired()){
             $otp->delete();
@@ -38,6 +40,7 @@ class VerifyPhone extends Controller
         }
 
         $otp->delete();
+
         return redirect('home');
 
     }

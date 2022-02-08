@@ -15,7 +15,7 @@ class AddMobileNumberToFieldToUsersTable extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->bigInteger('mobile_number')->unique();
-            $table->integer('otp')->nullable();
+          
 
         });
     }

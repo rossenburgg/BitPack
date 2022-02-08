@@ -64,8 +64,7 @@ public function routeNotificationForHellioSMS()
 
 public function otpCode()
 {
-    
-    return $this->belongsTo(UserOtp::class);
+    return $this->hasOne(UserOtp::class);
 }
 
 }
