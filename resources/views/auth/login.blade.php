@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<script> if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) { document.documentElement.classList.add('dark'); } else {document.documentElement.classList.remove('dark')   }  </script>
 
     <script src="{{ asset('js/app.js') }}" defer></script>
     <div class="container-fluid ps-md-0 ">
