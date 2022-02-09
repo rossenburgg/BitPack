@@ -29,6 +29,9 @@ Route::get('docs', [App\Http\Controllers\DocsController::class, 'index'])->name(
 
 Route::get('success', [App\Http\Controllers\SuccessController::class, 'index'])->name('success');
 Route::get('psuccess', [App\Http\Controllers\PhoneSuccessController::class, 'index'])->name('psuccess');
+Route::get('process', [App\Http\Controllers\ProcessController::class, 'index'])->name('process');
+
+
 
 Route::get('phone', [App\Http\Controllers\VerifyPhone::class, 'index'])->name('phone');
 Route::post('phone', [App\Http\Controllers\VerifyPhone::class, 'verify'])->name('phone.verify');

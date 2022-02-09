@@ -49,12 +49,11 @@
                                     </div>
 
                                     <div class="form-floating mb-3">
-                                        <input id="floatingInput" type="tel" placeholder="+233****"
+                                        <input id="floatingInput" type="phone" placeholder="+233****"
                                             class="form-control @error('phone') is-invalid @enderror" name="mobile_number"
                                             required autocomplete="phone">
 
                                         <label for="floatingInput">{{ __('Mobile Number') }}</label>
-
                                     </div>
 
                                     <div class="form-floating mb-3">
