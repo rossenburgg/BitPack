@@ -80,7 +80,7 @@
                             href="#pablo" onclick="openDropdown(event,'demo-pages-dropdown')">
                              More
                         </a>
-                        <div class="hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48"
+                        <div class="dark:text-white dark:bg-gray-700  hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48"
                             id="demo-pages-dropdown">
                             <span
                                 class="text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-blueGray-400">
@@ -169,26 +169,24 @@
                                 <div
                                     class="text-white lg:text-blueGray-200 text-blueGray-400  text-lg leading-lg mr-2">
                                     @auth
-                                    <a href="{{ url('/home') }}"> Home</a> @else
+                                    <a href="{{ url('/home') }}"> Home</a>
+                                     @else
                                         <a href="{{ route('login') }}" class="mt-4 lg:mt-0 mr-5">Log in</a>
-
+                                        <button
+                                        class="text-gray-900 dark:bg-gray-900 dark:text-white bg-white text-blueGray-700 active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 mr-3 mb-3 ease-linear transition-all duration-150"
+                                        type="button">
+                                        <i class="fas fa-arrow-alt-circle-down"></i>
+                                        <a href="{{ route('register') }}">Sign up</a>
                             </a>
                 </div>
                 @endif @endauth
                 </li>
 
-                <li class="flex items-center">
-                    <button
-                        class="dark:bg-gray-900 bg-white text-blueGray-700 active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 mr-3 mb-3 ease-linear transition-all duration-150"
-                        type="button">
-                        <i class="fas fa-arrow-alt-circle-down"></i>
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Sign up</a>
-            </div>
+
 
             </button>
             </li>
-            @endif
+
             </ul>
 
             </div>
@@ -202,7 +200,7 @@
               <div
                 class="absolute top-0 w-full h-full bg-center bg-cover"
                 style="
-                  background-image: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1267&amp;q=80');
+                  background-image: url('{{ asset('imgs/christna.jpg') }}');
                 "
               >
                 <span
@@ -215,7 +213,7 @@
                   <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                     <div class="pr-12">
                       <h1 class="text-white font-semibold text-5xl ">
-                       Your Number One Cryto Trading Platform
+                       Your Number One Crypto Trading Platform
                       </h1>
                       <p class="text-white mt-4 text-lg text-blueGray-200">
                         Buy and sell crytocurrencies like bitcoin, litecoin, ethereum, etc. with your local payment methods like Mobile Money, Banks and credit cards easily.
@@ -238,20 +236,99 @@
                   y="0"
                 >
                   <polygon
-                    class="text-blueGray-200 fill-current"
+                    class="darl:text-gray-700 text-white fill-current"
                     points="2560 0 2560 100 0 100"
                   ></polygon>
                 </svg>
               </div>
             </div>
-            <section class="pb-20 bg-blueGray-200 -mt-24 dark:bg-gray-900">
+
+            <section class="dark:bg-gray-800 relative py-20">
+                <div
+                  class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
+                  style="transform: translateZ(0px)"
+                >
+
+                </div>
+                <div class="container mx-auto px-4">
+                  <div class="items-center flex flex-wrap">
+                    <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+                      <img
+                        alt="..."
+                        class="max-w-full rounded-lg shadow-lg"
+                        src="{{ asset('imgs/kelly.jpg') }}"
+                      />
+                    </div>
+                    <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+                      <div class="md:pr-12">
+                        <div
+                          class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300"
+                        >
+                          <i class="fas fa-rocket text-xl"></i>
+                        </div>
+                        <h3 class="text-3xl font-semibold">A growing company</h3>
+                        <p class="mt-4 text-lg leading-relaxed text-blueGray-500">
+                          The extension comes with three pre-built pages to help you get
+                          started faster. You can change the text and images and you're
+                          good to go.
+                        </p>
+                        <ul class="list-none mt-6">
+                          <li class="py-2">
+                            <div class="flex items-center">
+                              <div>
+                                <span
+                                  class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
+                                  ><i class="fas fa-fingerprint"></i
+                                ></span>
+                              </div>
+                              <div>
+                                <h4 class="text-blueGray-500">
+                                  Carefully crafted components
+                                </h4>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="py-2">
+                            <div class="flex items-center">
+                              <div>
+                                <span
+                                  class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
+                                  ><i class="fab fa-html5"></i
+                                ></span>
+                              </div>
+                              <div>
+                                <h4 class="text-blueGray-500">Amazing page examples</h4>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="py-2">
+                            <div class="flex items-center">
+                              <div>
+                                <span
+                                  class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
+                                  ><i class="far fa-paper-plane"></i
+                                ></span>
+                              </div>
+                              <div>
+                                <h4 class="text-blueGray-500">Dynamic components</h4>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+            <section class="py-40  pb-20 bg-blueGray-200 -mt-24 dark:bg-gray-900">
               <div class="container mx-auto px-4">
                 <div class="flex flex-wrap">
                   <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center ">
                     <div
                       class="dark:bg-gray-700 relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
                     >
-                      <div class="px-4 py-5 flex-auto ">
+                      <div class="px-4 py-4 flex-auto ">
                         <div
                           class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
                         >
@@ -380,7 +457,7 @@
                   y="0"
                 >
                   <polygon
-                    class="text-white fill-current"
+                    class="dark:text-gray-700 text-white fill-current"
                     points="2560 0 2560 100 0 100"
                   ></polygon>
                 </svg>
@@ -391,7 +468,7 @@
                     <img
                       alt="..."
                       class="max-w-full rounded-lg shadow-lg"
-                      src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80"
+                      src="{{ asset('imgs/kelly.jpg') }}"
                     />
                   </div>
                   <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
@@ -626,7 +703,7 @@
                   y="0"
                 >
                   <polygon
-                    class="text-blueGray-800 fill-current"
+                    class="dark:text-gray-700 text-white fill-current"
                     points="2560 0 2560 100 0 100"
                   ></polygon>
                 </svg>
@@ -762,7 +839,7 @@
                 y="0"
               >
                 <polygon
-                  class=" text-blueGray-200 fill-current"
+                  class="dark:text-gray-700 text-white fill-current"
                   points="2560 0 2560 100 0 100"
                 ></polygon>
               </svg>
